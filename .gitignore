@@ -1,0 +1,20 @@
+# Рабочие данные
+data.json
+board.json
+*.sqlite
+*.sqlite3
+*.db
+backups/
+
+# Секреты и локальные настройки
+.env
+*.env
+session.key
+google.allow
+secrets/
+
+# Служебные файлы
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
