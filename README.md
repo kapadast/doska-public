@@ -16,7 +16,7 @@ The application runs on a zero-dependency Python HTTP server with a vanilla Java
 
 1. **Practice does not automatically equal mastery.** Logging hours, finishing tasks, or checking off habits fills the practice bar (XP), not the mastery score.
 2. **Evidence-gated progression.** When a skill's XP bar reaches the threshold for the next rank, the rank does not increase on its own. The skill enters a **candidate state** (`level < 10` and `xp >= threshold`). Moving to the next rank requires passing the examination or verification criteria for that tier.
-3. **Failed verification resets practice, not rank.** If a verification attempt fails, the verified rank is kept, while the XP progress toward the next rank resets to `0`. Removing a task or unchecking a habit subtracts XP (floored at `0`) without lowering an already verified rank.
+3. **A failed test resets the experience bar, not the rank.** The skill's XP returns to `0`, the start of the same step. The verified rank stays. Removing a task or unchecking a habit only subtracts XP (floored at `0`) and does not lower the rank.
 4. **Domain separation.** Physical and cognitive capacities are measured against standardized tests and age/sex cohort norms. Professional skills are measured by verified business outcomes, autonomy, reliability, and transferability across contexts.
 
 ---
@@ -287,7 +287,7 @@ Corrections to formulas, scales, sources, and wording are welcome. Open a pull r
 
 1. **Практика сама по себе не равна мастерству.** Часы, закрытые задачи и галочки привычек заполняют полоску опыта (XP), а не балл мастерства.
 2. **Рост ранга только по доказательству.** Когда опыт доходит до порога следующего ранга, ранг сам не растёт. Навык становится **кандидатом** (`level < 10` и `xp >= порога`). Следующий ранг открывается после экзамена или проверки этой ступени.
-3. **Несданная проверка обнуляет опыт ступени, не ранг.** Подтверждённый ранг остаётся. Опыт к следующему рангу возвращается на `0`. Удаление записи или снятая галочка уменьшают опыт, не ниже `0`, и уже подтверждённый ранг не понижают.
+3. **Проваленный тест обнуляет шкалу опыта, ранг не снижает.** Опыт этого навыка возвращается на `0`, начало той же ступени. Удаление записи или снятая галочка уменьшают опыт, не ниже `0`, и ранг тоже не понижают.
 4. **Разные области меряются по-разному.** Физические и когнитивные способности — тестом с нормой пола и возраста. Профессиональные навыки — проверенным результатом, самостоятельностью, надёжностью и переносом на другой контекст.
 
 ---
